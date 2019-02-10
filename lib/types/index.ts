@@ -1,3 +1,3 @@
-import { JsonType } from "./jsonType";
+import { JSONType } from "./JSONType";
 
-export { JsonType };
+export { JSONType };

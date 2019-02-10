@@ -8,6 +8,7 @@ import {
   putCryptoBalance,
   deleteCryptoBalance
 } from "./crypto";
+import { postNewPayment } from "./payment";
 
 export class Routes {
   public routes(app): void {
@@ -28,6 +29,9 @@ export class Routes {
     });
     app.route("/api/crypto").delete((req: Request, res: Response) => {
       deleteCryptoBalance(req, res);
+    });
+    app.route("/api/payment").post((req: Request, res: Response) => {
+      postNewPayment(req, res);
     });
   }
 }

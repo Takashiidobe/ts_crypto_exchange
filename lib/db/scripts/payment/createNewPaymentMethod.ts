@@ -12,12 +12,12 @@ const createNewPaymentMethod = (
     cvv,
     country
   ) VALUES (
-    ${card_number},
-    ${expiration_month},
-    ${expiration_date},
-    ${cvv},
-    ${country}
-  )`;
+    '${card_number}',
+    '${expiration_month}',
+    '${expiration_date}',
+    '${cvv}',
+    '${country}'
+  );`;
 };
 
 export default createNewPaymentMethod;

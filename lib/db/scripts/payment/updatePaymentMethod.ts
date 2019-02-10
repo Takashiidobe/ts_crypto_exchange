@@ -15,7 +15,7 @@ const updatePaymentMethod = (
       country = ${country}
     WHERE 
       payment_id = ${id}
-  )`;
+  );`;
 };
 
 export default updatePaymentMethod;
