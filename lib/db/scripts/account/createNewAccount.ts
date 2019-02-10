@@ -1,4 +1,4 @@
-const createNewAccount = (username: String, password: String) => {
+const createNewAccount = (username: string, password: string) => {
   return `
   INSERT INTO account (
     username, password, balance

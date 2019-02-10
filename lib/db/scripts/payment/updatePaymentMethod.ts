@@ -1,10 +1,10 @@
 const updatePaymentMethod = (
-  id: Number,
-  card_number: String,
-  expiration_month: Number,
-  expiration_date: Number,
-  cvv: Number,
-  country: String
+  id: number,
+  card_number: string,
+  expiration_month: number,
+  expiration_date: number,
+  cvv: number,
+  country: string
 ) => {
   return `UPDATE payment
     SET  

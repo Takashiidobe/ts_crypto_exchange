@@ -1,4 +1,4 @@
-const clearCryptoBalance = (id: Number) => {
+const clearCryptoBalance = (id: number) => {
   return `DELETE FROM crypto WHERE crypto_id = ${id}`;
 };
 

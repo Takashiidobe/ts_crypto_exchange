@@ -1,9 +1,9 @@
 const createNewPaymentMethod = (
-  card_number: String,
-  expiration_month: Number,
-  expiration_date: Number,
-  cvv: Number,
-  country: String
+  card_number: string,
+  expiration_month: number,
+  expiration_date: number,
+  cvv: number,
+  country: string
 ) => {
   return `INSERT INTO payment (
     card_number,

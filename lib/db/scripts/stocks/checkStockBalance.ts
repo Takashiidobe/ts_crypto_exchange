@@ -1,4 +1,4 @@
-const checkStockBalance = (id: Number) => {
+const checkStockBalance = (id: number) => {
   return `SELECT stocks from stock WHERE id = ${id}`;
 };
 
