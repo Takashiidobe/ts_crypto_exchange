@@ -1,11 +1,10 @@
+import knex from '../../knex/';
+
 const createNewAccount = (username: string, password: string) => {
-  return `
-  INSERT INTO account (
-    username, password, balance
-    ) VALUES (
-      '${username}', '${password}', 0
-    );
-`;
+  return knex('account').insert({
+    username,
+    password
+  }).then(result => result.json({ success: true, message: 'ok' }));
 };
 
 export default createNewAccount;
